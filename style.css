@@ -14,7 +14,7 @@ body {
     position: relative;
 }
 
-/* Celestial Blue Ambient Background Glows */
+/* Background Glows */
 .bg-glow {
     position: fixed;
     top: -150px;
@@ -37,13 +37,13 @@ body {
     pointer-events: none;
 }
 
-/* App Layout Structure */
+/* App Layout */
 .app-container {
     display: flex;
     min-height: 100vh;
 }
 
-/* Sidebar Navigation (โทนสีน้ำเงินพรีเมียม Glassmorphism) */
+/* Sidebar Navigation */
 .sidebar {
     width: 270px;
     background: rgba(5, 14, 34, 0.88);
@@ -328,6 +328,58 @@ summary {
     border-top: 1px dashed rgba(56, 189, 248, 0.2);
     color: #cbd5e1;
     font-size: 0.93rem;
+}
+
+/* Rules Card & Rules List Styling (ส่วนกฎระเบียบเพิ่มเติม) */
+.rules-card {
+    background: rgba(11, 22, 48, 0.65);
+    backdrop-filter: blur(14px);
+    padding: 30px;
+    border-radius: 18px;
+    border: 1px solid rgba(56, 189, 248, 0.18);
+}
+
+.rules-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rules-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.rules-list li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.rule-icon {
+    font-size: 1.3rem;
+    color: #38bdf8;
+    background: rgba(14, 165, 233, 0.12);
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    flex-shrink: 0;
+}
+
+.rules-list strong {
+    color: #f8fafc;
+    font-size: 1.05rem;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.rules-list p {
+    color: #94a3b8;
+    font-size: 0.93rem;
+    line-height: 1.5;
 }
 
 /* Footer */

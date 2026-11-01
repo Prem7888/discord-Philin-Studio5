@@ -23,7 +23,11 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="logo">
-                    <img src="Philin_Studio__Celestial_Jewel_Logo_2.png" alt="Philin Studio Logo" class="logo-img">
+                    <!-- แก้ไขการดึงรูปภาพ: ใส่ onError สำรองหากไฟล์ในเครื่องหาไม่เจอจะสลับไปใช้รูปออนไลน์ทันที -->
+                    <img src="Philin_Studio__Celestial_Jewel_Logo_3.png" 
+     onerror="this.onerror=null; this.src='https://raw.githubusercontent.com/prem7888/discord-Philin-Studio5/main/Philin_Studio__Celestial_Jewel_Logo_3.png';" 
+     alt="Philin Studio Logo" 
+     class="logo-img">
                     <span class="logo-text">PHILIN <small>STUDIO</small></span>
                 </div>
             </div>
@@ -34,6 +38,7 @@
                     <li><a href="#features"><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</a></li>
                     <li><a href="#minigames"><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</a></li>
                     <li><a href="#events"><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</a></li>
+                    <li><a href="#rules"><i class="fa-solid fa-shield-halved"></i> กฎระเบียบ</a></li>
                 </ul>
             </nav>
 
@@ -65,16 +70,3 @@
 
             <!-- Sections Container -->
             <div class="sections-wrapper">
-                
-                <!-- 1. จุดเด่นเซิร์ฟเวอร์ -->
-                <section id="features" class="feature-section">
-                    <div class="section-title">
-                        <h2><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</h2>
-                    </div>
-                    <div class="feature-card">
-                        <div class="icon"><i class="fa-solid fa-comments"></i></div>
-                        <h3>พูดคุยเป็นกันเอง</h3>
-                        <p>มีห้องพูดคุยหลากหลายหัวข้อและบริการมากมาย ดูแล 24 ชั่วโมง</p>
-                        <details>
-                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
-                            <div
