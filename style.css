@@ -231,3 +231,33 @@ footer {
 #features {
     display: none;
 }
+/* ตกแต่งแท็ก details & summary */
+.feature-card details {
+    margin-top: 15px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 8px 12px;
+}
+
+.feature-card summary {
+    cursor: pointer;
+    color: #5865F2;
+    font-weight: bold;
+    font-size: 0.9rem;
+    outline: none;
+    user-select: none;
+}
+
+.feature-card summary:hover {
+    color: #7983f5;
+}
+
+.feature-card .details-content {
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: #dcddde;
+    line-height: 1.5;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 8px;
+}
