@@ -32,8 +32,8 @@
                 <ul>
                     <li><a href="#hero" class="active"><i class="fa-solid fa-gem"></i> หน้าแรก</a></li>
                     <li><a href="#features"><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</a></li>
-                    <li><a href="https://discord.gg/krkD8gxDK" target="_blank"><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</a></li>
-                    <li><a href="https://discord.gg/krkD8gxDK" target="_blank"><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</a></li>
+                    <li><a href="#minigames"><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</a></li>
+                    <li><a href="#events"><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</a></li>
                 </ul>
             </nav>
 
@@ -59,16 +59,18 @@
                         <a href="https://discord.gg/krkD8gxDK" target="_blank" class="btn btn-primary btn-large">
                             <i class="fa-brands fa-discord"></i> เข้าร่วม Discord เลย
                         </a>
-                        <a href="#features" class="btn btn-secondary btn-large">ดูจุดเด่นเซิร์ฟเวอร์</a>
                     </div>
                 </div>
             </section>
 
-            <!-- Features Section -->
-            <section id="features" class="features-container">
-                <h2>ทำไมต้องเข้าเซิร์ฟเวอร์เรา?</h2>
-                <div class="features-grid">
-                    <!-- กล่องที่ 1 -->
+            <!-- Sections Container (แยกเก็บแต่ละจุดเด่นตามหัวข้อ) -->
+            <div class="sections-wrapper">
+                
+                <!-- 1. จุดเด่นเซิร์ฟเวอร์ -->
+                <section id="features" class="feature-section">
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</h2>
+                    </div>
                     <div class="feature-card">
                         <div class="icon"><i class="fa-solid fa-comments"></i></div>
                         <h3>พูดคุยเป็นกันเอง</h3>
@@ -81,10 +83,15 @@
                             </div>
                         </details>
                     </div>
+                </section>
 
-                    <!-- กล่องที่ 2 -->
+                <!-- 2. มินิเกม & RP -->
+                <section id="minigames" class="feature-section">
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</h2>
+                    </div>
                     <div class="feature-card">
-                        <div class="icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <div class="icon"><i class="fa-solid fa-cubes"></i></div>
                         <h3>มี RpMinecraft สนุกๆ หลายแนว</h3>
                         <p>ไม่ว่าจะ RP ของ Bedrock หรือ Java เราก็มีครบครัน</p>
                         <details>
@@ -95,11 +102,16 @@
                             </div>
                         </details>
                     </div>
+                </section>
 
-                    <!-- กล่องที่ 3 -->
+                <!-- 3. กิจกรรม & แจกของ -->
+                <section id="events" class="feature-section">
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</h2>
+                    </div>
                     <div class="feature-card">
-                        <div class="icon"><i class="fa-solid fa-gift"></i></div>
-                        <h3>กิจกรรม & แจกของ</h3>
+                        <div class="icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>กิจกรรม & แจกของรางวัล</h3>
                         <p>มีกิจกรรมสนุกๆ และแจกรางวัลพิเศษให้กับสมาชิกเป็นประจำ</p>
                         <details>
                             <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
@@ -109,8 +121,9 @@
                             </div>
                         </details>
                     </div>
-                </div>
-            </section>
+                </section>
+
+            </div>
 
             <!-- Footer -->
             <footer>
@@ -119,7 +132,7 @@
         </main>
     </div>
 
-    <!-- Script สำหรับเปิด-ปิด เมนูบนมือถือ -->
+    <!-- Script สำหรับเปิด-ปิด เมนูบนมือถือ และ Active Link -->
     <script>
         const menuToggle = document.getElementById('menuToggle');
         const sidebar = document.getElementById('sidebar');
@@ -132,6 +145,27 @@
             } else {
                 icon.className = 'fa-solid fa-bars';
             }
+        });
+
+        // เปลี่ยน Active Link ใน Sidebar เมื่อ Scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.sidebar-nav a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 150) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
         });
     </script>
 </body>

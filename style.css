@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -13,14 +14,14 @@ body {
     position: relative;
 }
 
-/* Background Glowing Elements (ธีมน้ำเงินคริสตัล) */
+/* Background Glows */
 .bg-glow {
     position: fixed;
     top: -150px;
     right: -100px;
     width: 650px;
     height: 650px;
-    background: radial-gradient(circle, rgba(14, 165, 233, 0.25) 0%, rgba(3, 105, 161, 0.1) 40%, rgba(3, 7, 18, 0) 70%);
+    background: radial-gradient(circle, rgba(14, 165, 233, 0.22) 0%, rgba(3, 105, 161, 0.08) 40%, rgba(3, 7, 18, 0) 70%);
     z-index: 0;
     pointer-events: none;
 }
@@ -31,18 +32,18 @@ body {
     left: 100px;
     width: 500px;
     height: 500px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, rgba(3, 7, 18, 0) 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(3, 7, 18, 0) 70%);
     z-index: 0;
     pointer-events: none;
 }
 
-/* Layout Container */
+/* App Layout */
 .app-container {
     display: flex;
     min-height: 100vh;
 }
 
-/* Sidebar (เมนูด้านข้าง สไตล์ Celestial Glass) */
+/* Sidebar */
 .sidebar {
     width: 270px;
     background: rgba(7, 16, 38, 0.85);
@@ -171,7 +172,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 120px 30px 80px;
+    padding: 100px 30px 60px;
+    min-height: 70vh;
 }
 
 .hero-content {
@@ -213,8 +215,6 @@ body {
 .cta-buttons {
     display: flex;
     justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
 }
 
 /* Buttons */
@@ -242,50 +242,41 @@ body {
     box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
 }
 
-.btn-secondary {
-    background: rgba(15, 23, 42, 0.6);
-    color: white;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-}
-
-.btn-secondary:hover {
-    background: rgba(30, 41, 59, 0.8);
-    border-color: rgba(56, 189, 248, 0.3);
-    transform: translateY(-2px);
-}
-
 .btn-large {
-    font-size: 1.05rem;
-    padding: 14px 32px;
+    font-size: 1.1rem;
+    padding: 16px 36px;
 }
 
-/* Features Section */
-.features-container {
-    max-width: 1100px;
-    margin: 40px auto 80px;
-    padding: 0 30px;
-    text-align: center;
+/* Sections Wrapper */
+.sections-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 30px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
 }
 
-.features-container h2 {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    background: linear-gradient(180deg, #ffffff 0%, #93c5fd 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.feature-section {
+    padding-top: 20px;
 }
 
-.features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
+.section-title h2 {
+    font-size: 1.6rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    padding-bottom: 10px;
 }
 
 .feature-card {
     background: rgba(15, 23, 42, 0.6);
     backdrop-filter: blur(12px);
-    padding: 32px 24px;
+    padding: 32px 28px;
     border-radius: 18px;
     border: 1px solid rgba(56, 189, 248, 0.12);
     text-align: left;
@@ -293,7 +284,7 @@ body {
 }
 
 .feature-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px);
     border-color: rgba(56, 189, 248, 0.4);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.15);
 }
@@ -301,19 +292,18 @@ body {
 .feature-card .icon {
     font-size: 2.2rem;
     color: #38bdf8;
-    margin-bottom: 18px;
-    text-shadow: 0 0 12px rgba(56, 189, 248, 0.5);
+    margin-bottom: 16px;
 }
 
 .feature-card h3 {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
     color: #f8fafc;
 }
 
 .feature-card p {
     color: #94a3b8;
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-bottom: 15px;
 }
 
@@ -324,17 +314,17 @@ details {
 
 summary {
     color: #38bdf8;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 600;
     outline: none;
 }
 
 .details-content {
-    margin-top: 10px;
-    padding-top: 10px;
+    margin-top: 12px;
+    padding-top: 12px;
     border-top: 1px dashed rgba(56, 189, 248, 0.2);
     color: #cbd5e1;
-    font-size: 0.88rem;
+    font-size: 0.93rem;
 }
 
 /* Footer */
@@ -347,7 +337,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Mobile Toggle Button */
+/* Mobile Toggle */
 .mobile-toggle {
     display: none;
     position: fixed;
@@ -361,10 +351,9 @@ footer {
     border-radius: 10px;
     font-size: 1.2rem;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 900px) {
     .mobile-toggle {
         display: block;
@@ -380,10 +369,6 @@ footer {
 
     .main-content {
         margin-left: 0;
-    }
-
-    .hero {
-        padding-top: 100px;
     }
 
     .glory-title {
