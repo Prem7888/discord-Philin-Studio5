@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- Celestial Background Glows -->
+    <!-- Background Glows -->
     <div class="bg-glow"></div>
     <div class="bg-glow-secondary"></div>
 
@@ -63,7 +63,7 @@
                 </div>
             </section>
 
-            <!-- Sections Container (แยกเก็บแต่ละจุดเด่นตามหัวข้อ) -->
+            <!-- Sections Container -->
             <div class="sections-wrapper">
                 
                 <!-- 1. จุดเด่นเซิร์ฟเวอร์ -->
@@ -77,96 +77,4 @@
                         <p>มีห้องพูดคุยหลากหลายหัวข้อและบริการมากมาย ดูแล 24 ชั่วโมง</p>
                         <details>
                             <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
-                            <div class="details-content">
-                                <p>• มีระบบยศและห้องพูดคุยส่วนตัว</p>
-                                <p>• ทีมงานคอยดูแลความเรียบร้อยตลอด 24 ชั่วโมง</p>
-                            </div>
-                        </details>
-                    </div>
-                </section>
-
-                <!-- 2. มินิเกม & RP -->
-                <section id="minigames" class="feature-section">
-                    <div class="section-title">
-                        <h2><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</h2>
-                    </div>
-                    <div class="feature-card">
-                        <div class="icon"><i class="fa-solid fa-cubes"></i></div>
-                        <h3>มี RpMinecraft สนุกๆ หลายแนว</h3>
-                        <p>ไม่ว่าจะ RP ของ Bedrock หรือ Java เราก็มีครบครัน</p>
-                        <details>
-                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
-                            <div class="details-content">
-                                <p>• รองรับทั้งระบบ Java และ Bedrock (MCPE)</p>
-                                <p>• มีระบบ Roleplay สนุกๆ และเควสต์ให้ทำมากมาย</p>
-                            </div>
-                        </details>
-                    </div>
-                </section>
-
-                <!-- 3. กิจกรรม & แจกของ -->
-                <section id="events" class="feature-section">
-                    <div class="section-title">
-                        <h2><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</h2>
-                    </div>
-                    <div class="feature-card">
-                        <div class="icon"><i class="fa-solid fa-award"></i></div>
-                        <h3>กิจกรรม & แจกของรางวัล</h3>
-                        <p>มีกิจกรรมสนุกๆ และแจกรางวัลพิเศษให้กับสมาชิกเป็นประจำ</p>
-                        <details>
-                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
-                            <div class="details-content">
-                                <p>• กิจกรรมสุ่มแจกยศและของรางวัลทุกสัปดาห์</p>
-                                <p>• มินิเกมร่วมสนุกในเซิร์ฟเวอร์ Discord</p>
-                            </div>
-                        </details>
-                    </div>
-                </section>
-
-            </div>
-
-            <!-- Footer -->
-            <footer>
-                <p>&copy; Philin Studio. All rights reserved.</p>
-            </footer>
-        </main>
-    </div>
-
-    <!-- Script สำหรับเปิด-ปิด เมนูบนมือถือ และ Active Link -->
-    <script>
-        const menuToggle = document.getElementById('menuToggle');
-        const sidebar = document.getElementById('sidebar');
-
-        menuToggle.addEventListener('click', () => {
-            sidebar.classList.toggle('open');
-            const icon = menuToggle.querySelector('i');
-            if (sidebar.classList.contains('open')) {
-                icon.className = 'fa-solid fa-xmark';
-            } else {
-                icon.className = 'fa-solid fa-bars';
-            }
-        });
-
-        // เปลี่ยน Active Link ใน Sidebar เมื่อ Scroll
-        const sections = document.querySelectorAll('section');
-        const navLinks = document.querySelectorAll('.sidebar-nav a');
-
-        window.addEventListener('scroll', () => {
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                if (pageYOffset >= sectionTop - 150) {
-                    current = section.getAttribute('id');
-                }
-            });
-
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').includes(current)) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+                            <div

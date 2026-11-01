@@ -7,21 +7,21 @@
 }
 
 body {
-    background-color: #030712;
+    background-color: #020612;
     color: #e2e8f0;
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
 }
 
-/* Background Glows */
+/* Celestial Blue Ambient Background Glows */
 .bg-glow {
     position: fixed;
     top: -150px;
     right: -100px;
     width: 650px;
     height: 650px;
-    background: radial-gradient(circle, rgba(14, 165, 233, 0.22) 0%, rgba(3, 105, 161, 0.08) 40%, rgba(3, 7, 18, 0) 70%);
+    background: radial-gradient(circle, rgba(14, 116, 233, 0.28) 0%, rgba(3, 75, 161, 0.1) 40%, rgba(2, 6, 18, 0) 70%);
     z-index: 0;
     pointer-events: none;
 }
@@ -30,25 +30,25 @@ body {
     position: fixed;
     bottom: -150px;
     left: 100px;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.12) 0%, rgba(3, 7, 18, 0) 70%);
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(56, 189, 248, 0.15) 0%, rgba(2, 6, 18, 0) 70%);
     z-index: 0;
     pointer-events: none;
 }
 
-/* App Layout */
+/* App Layout Structure */
 .app-container {
     display: flex;
     min-height: 100vh;
 }
 
-/* Sidebar */
+/* Sidebar Navigation (โทนสีน้ำเงินพรีเมียม Glassmorphism) */
 .sidebar {
     width: 270px;
-    background: rgba(7, 16, 38, 0.85);
-    backdrop-filter: blur(16px);
-    border-right: 1px solid rgba(56, 189, 248, 0.15);
+    background: rgba(5, 14, 34, 0.88);
+    backdrop-filter: blur(18px);
+    border-right: 1px solid rgba(56, 189, 248, 0.2);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,7 +59,7 @@ body {
     left: 0;
     z-index: 100;
     transition: transform 0.3s ease;
-    box-shadow: 4px 0 25px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 0 25px rgba(0, 0, 0, 0.6);
 }
 
 .sidebar-header .logo {
@@ -70,28 +70,29 @@ body {
 }
 
 .logo-img {
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     object-fit: contain;
-    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.7));
 }
 
 .logo-text {
     font-size: 1.25rem;
     font-weight: 800;
     letter-spacing: 1px;
-    background: linear-gradient(135deg, #ffffff 0%, #38bdf8 100%);
+    background: linear-gradient(135deg, #ffffff 0%, #7dd3fc 50%, #38bdf8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
     flex-direction: column;
     line-height: 1.1;
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
 }
 
 .logo-text small {
     font-size: 0.65rem;
     letter-spacing: 3px;
-    color: #0ea5e9;
+    color: #38bdf8;
     -webkit-text-fill-color: initial;
 }
 
@@ -119,9 +120,9 @@ body {
 .sidebar-nav a:hover,
 .sidebar-nav a.active {
     color: #ffffff;
-    background: rgba(14, 165, 233, 0.12);
-    border-color: rgba(56, 189, 248, 0.25);
-    box-shadow: 0 0 15px rgba(56, 189, 248, 0.1);
+    background: rgba(14, 165, 233, 0.15);
+    border-color: rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.2);
 }
 
 .sidebar-nav a.active {
@@ -145,13 +146,13 @@ body {
     align-items: center;
     gap: 10px;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
-    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 4px 15px rgba(2, 132, 199, 0.4);
+    border: 1px solid rgba(125, 211, 252, 0.3);
 }
 
 .btn-celestial:hover {
     background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
-    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.5);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
     transform: translateY(-2px);
 }
 
@@ -184,15 +185,15 @@ body {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    background: rgba(14, 165, 233, 0.1);
+    background: rgba(14, 165, 233, 0.12);
     color: #38bdf8;
     padding: 8px 18px;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 24px;
-    border: 1px solid rgba(56, 189, 248, 0.25);
-    box-shadow: 0 0 12px rgba(56, 189, 248, 0.15);
+    border: 1px solid rgba(56, 189, 248, 0.3);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
 .glory-title {
@@ -200,10 +201,10 @@ body {
     font-weight: 800;
     margin-bottom: 20px;
     line-height: 1.2;
-    background: linear-gradient(180deg, #ffffff 30%, #bae6fd 100%);
+    background: linear-gradient(180deg, #ffffff 20%, #e0f2fe 60%, #38bdf8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0 0 30px rgba(56, 189, 248, 0.2);
+    text-shadow: 0 0 35px rgba(56, 189, 248, 0.3);
 }
 
 .hero p {
@@ -233,13 +234,13 @@ body {
 .btn-primary {
     background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
     color: white;
-    border: 1px solid rgba(56, 189, 248, 0.4);
+    border: 1px solid rgba(125, 211, 252, 0.4);
 }
 
 .btn-primary:hover {
     background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%);
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.4);
+    box-shadow: 0 8px 25px rgba(14, 165, 233, 0.5);
 }
 
 .btn-large {
@@ -269,30 +270,32 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    border-bottom: 1px solid rgba(56, 189, 248, 0.15);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
     padding-bottom: 10px;
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
 }
 
 .feature-card {
-    background: rgba(15, 23, 42, 0.6);
-    backdrop-filter: blur(12px);
+    background: rgba(11, 22, 48, 0.65);
+    backdrop-filter: blur(14px);
     padding: 32px 28px;
     border-radius: 18px;
-    border: 1px solid rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.18);
     text-align: left;
     transition: all 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-4px);
-    border-color: rgba(56, 189, 248, 0.4);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(56, 189, 248, 0.15);
+    border-color: rgba(56, 189, 248, 0.5);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 25px rgba(56, 189, 248, 0.2);
 }
 
 .feature-card .icon {
     font-size: 2.2rem;
     color: #38bdf8;
     margin-bottom: 16px;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
 }
 
 .feature-card h3 {
@@ -337,7 +340,7 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Mobile Toggle */
+/* Mobile Toggle Button */
 .mobile-toggle {
     display: none;
     position: fixed;
@@ -346,14 +349,14 @@ footer {
     z-index: 101;
     background: #0284c7;
     color: white;
-    border: 1px solid rgba(56, 189, 248, 0.4);
+    border: 1px solid rgba(125, 211, 252, 0.4);
     padding: 10px 14px;
     border-radius: 10px;
     font-size: 1.2rem;
     cursor: pointer;
 }
 
-/* Responsive */
+/* Responsive Styles */
 @media (max-width: 900px) {
     .mobile-toggle {
         display: block;
