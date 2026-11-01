@@ -18,25 +18,26 @@
         <i class="fa-solid fa-bars"></i>
     </button>
 
+    <!-- App Main Layout Container -->
     <div class="app-container">
+        
         <!-- Sidebar Navigation -->
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="logo">
-                    <i class="fa-solid fa-gem" style="font-size: 1.8rem; color: #38bdf8; filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6));"></i>
+                    <i class="fa-solid fa-gem logo-icon"></i>
                     <span class="logo-text">PHILIN <small>STUDIO</small></span>
                 </div>
             </div>
 
             <nav class="sidebar-nav">
-    <ul>
-        <li><a href="#hero" class="active"><i class="fa-solid fa-gem"></i> หน้าแรก</a></li>
-        <li><a href="#features"><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</a></li>
-        <li><a href="#minigames"><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</a></li>
-        <li><a href="#events"><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</a></li>
-        <li><a href="#rules"><i class="fa-solid fa-shield-halved"></i> กฎระเบียบ</a></li>
-    </ul>
-</nav>
+                <ul>
+                    <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-gem"></i> หน้าแรก</a></li>
+                    <li><a href="#features" class="nav-link"><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</a></li>
+                    <li><a href="#minigames" class="nav-link"><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</a></li>
+                    <li><a href="#events" class="nav-link"><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</a></li>
+                    <li><a href="#rules" class="nav-link"><i class="fa-solid fa-shield-halved"></i> กฎระเบียบ</a></li>
+                </ul>
             </nav>
 
             <div class="sidebar-footer">
@@ -44,4 +45,189 @@
                     <i class="fa-brands fa-discord"></i> เข้าร่วม Discord
                 </a>
             </div>
-        </aside
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            
+            <!-- Hero Section -->
+            <section id="hero" class="content-section hero-section">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fa-solid fa-sparkles"></i> ยินดีต้อนรับสู่ Philin Studio
+                    </div>
+                    <h1 class="glory-title">เข้าร่วมและสนุกไปด้วยกัน!</h1>
+                    <p>แหล่งรวมบริการมากมาย และกิจกรรมสนุกๆ มากมายที่รอคุณอยู่</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="https://discord.gg/krkD8gxDK" target="_blank" class="btn btn-primary btn-large">
+                            <i class="fa-brands fa-discord"></i> เข้าร่วม Discord เลย
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sections Wrapper -->
+            <div class="sections-wrapper">
+                
+                <!-- 1. จุดเด่นเซิร์ฟเวอร์ -->
+                <section id="features" class="content-section">
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</h2>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3>พูดคุยเป็นกันเอง</h3>
+                        <p>มีห้องพูดคุยหลากหลายหัวข้อและบริการมากมาย ดูแล 24 ชั่วโมง</p>
+                        <details>
+                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
+                            <div class="details-content">
+                                <p>• มีระบบยศและห้องพูดคุยส่วนตัว</p>
+                                <p>• ทีมงานคอยดูแลความเรียบร้อยตลอด 24 ชั่วโมง</p>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+
+                <!-- 2. มินิเกม & RP -->
+                <section id="minigames" class="content-section">
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</h2>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-cubes"></i></div>
+                        <h3>มี RpMinecraft สนุกๆ หลายแนว</h3>
+                        <p>ไม่ว่าจะ RP ของ Bedrock หรือ Java เราก็มีครบครัน</p>
+                        <details>
+                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
+                            <div class="details-content">
+                                <p>• รองรับทั้งระบบ Java และ Bedrock (MCPE)</p>
+                                <p>• มีระบบ Roleplay สนุกๆ และเควสต์ให้ทำมากมาย</p>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+
+                <!-- 3. กิจกรรม & แจกของ -->
+                <section id="events" class="content-section">
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</h2>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-award"></i></div>
+                        <h3>กิจกรรม & แจกของรางวัล</h3>
+                        <p>มีกิจกรรมสนุกๆ และแจกรางวัลพิเศษให้กับสมาชิกเป็นประจำ</p>
+                        <details>
+                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
+                            <div class="details-content">
+                                <p>• กิจกรรมสุ่มแจกยศและของรางวัลทุกสัปดาห์</p>
+                                <p>• มินิเกมร่วมสนุกในเซิร์ฟเวอร์ Discord</p>
+                            </div>
+                        </details>
+                    </div>
+                </section>
+
+                <!-- 4. กฎระเบียบเซิร์ฟเวอร์ -->
+                <section id="rules" class="content-section">
+                    <div class="section-title">
+                        <h2><i class="fa-solid fa-shield-halved"></i> กฎระเบียบเซิร์ฟเวอร์</h2>
+                    </div>
+                    <div class="rules-card">
+                        <ul class="rules-list">
+                            <li>
+                                <i class="fa-solid fa-user-slash rule-icon"></i>
+                                <div>
+                                    <strong>ห้ามคุกคามและกลั่นแกล้ง</strong>
+                                    <p>ห้ามมีพฤติกรรมคุกคามทุกประเภท รวมถึงการคุกคามทางเพศ การหลีกเลี่ยงการบล็อก หรือการระดมคนร่วมกันโจมตีเซิร์ฟเวอร์ (Raid)</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-triangle-exclamation rule-icon"></i>
+                                <div>
+                                    <strong>ห้ามข่มขู่ใช้ความรุนแรง</strong>
+                                    <p>ห้ามข่มขู่ว่าจะทำร้ายบุคคลหรือกลุ่มบุคคลอื่น ไม่ว่าจะเป็นการข่มขู่โดยตรงหรือโดยนัย</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-user-lock rule-icon"></i>
+                                <div>
+                                    <strong>ห้ามเปิดเผยข้อมูลส่วนบุคคล (Doxxing)</strong>
+                                    <p>ห้ามเผยแพร่หรือข่มขู่ว่าจะเผยแพร่ข้อมูลส่วนบุคคล (PII) ของผู้อื่นโดยไม่ได้รับความยินยอม</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-ban rule-icon"></i>
+                                <div>
+                                    <strong>ห้ามใช้คำพูดแสดงความเกลียดชัง (Hate Speech)</strong>
+                                    <p>ห้ามโจมตีหรือเหยียดหยามบุคคลจากลักษณะทางเชื้อชาติ ชาติพันธุ์ เพศ อัตลักษณ์ทางเพศ หรือรสนิยมทางเพศ</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-child-reaching rule-icon"></i>
+                                <div>
+                                    <strong>ห้ามเกี่ยวข้องกับเนื้อหาอันตรายต่อเยาวชน</strong>
+                                    <p>ห้ามสร้าง เผยแพร่ หรือสนับสนุนการแสวงหาประโยชน์ทางเพศจากเด็ก (CSAM) หรือพฤติกรรมล่อลวงเด็ก</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bug rule-icon"></i>
+                                <div>
+                                    <strong>ห้ามเผยแพร่ข้อมูลเท็จที่เป็นอันตรายและมัลแวร์</strong>
+                                    <p>ห้ามส่งสแปม หลอกลวง (Phishing) แพร่ซอฟต์แวร์อันตราย/ไวรัส หรือปลอมแปลงเป็นบุคคลอื่นในทางที่ทำให้เข้าใจผิด</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-copyright rule-icon"></i>
+                                <div>
+                                    <strong>ห้ามละเมิดทรัพย์สินทางปัญญา</strong>
+                                    <p>ห้ามจำหน่ายหรือแจกจ่ายสินค้าละเมิดลิขสิทธิ์ ซอฟต์แวร์โกง (Cheats) หรือของเถื่อน</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <p>&copy; Philin Studio. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <!-- Advanced Script for Sidebar Toggle & Smooth Scroll Active State -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            const icon = menuToggle.querySelector('i');
+            icon.className = sidebar.classList.contains('open') ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+        });
+
+        // Intersection Observer สำหรับเปลี่ยนสถานะ Active ที่เมนูด้านซ้ายอัตโนมัติเมื่อเลื่อนหน้าจอ
+        const sections = document.querySelectorAll('.content-section');
+        const navLinks = document.querySelectorAll('.sidebar-nav .nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
