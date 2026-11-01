@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Discord Community</title>
+    <title>Philin Studio - Join Our Discord Community</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -12,84 +12,126 @@
     <!-- Background Elements -->
     <div class="bg-glow"></div>
 
-    <!-- Header / Navbar -->
-    <header class="navbar">
-        <div class="logo">
-            <i class="fa-brands fa-discord"></i> Philin Studio
-        </div>
-        <a href="https://discord.gg/7jzhzUPng" target="_blank" class="nav-btn">เข้าร่วมเลย</a>
-    </header>
+    <!-- Toggle Button for Mobile Navigation -->
+    <button class="mobile-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
 
-    <!-- Hero Section -->
-    <main class="hero">
-        <div class="hero-content">
-            <div class="badge"><i class="fa-solid fa-fire"></i> ยินดีต้อนรับสู่Philin Studio
-            <h1>เข้าร่วมและสนุกไปด้วยกัน!</h1>
-            <p>แหล่งรวมบริการมากหมายม  และกิจกรรมสนุกๆ มากมายที่รอคุณอยู่</p>
-            
-            <div class="cta-buttons">
-                <a href="https://discord.gg/7jzhzUPng" target="_blank" class="btn btn-primary">
+    <div class="app-container">
+        <!-- Sidebar Navigation (ย้ายเมนูมาไว้ข้างๆ) -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="fa-brands fa-discord"></i>
+                    <span>Philin Studio</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i> หน้าแรก</a></li>
+                    <li><a href="#features"><i class="fa-solid fa-star"></i> จุดเด่นเซิร์ฟเวอร์</a></li>
+                    <li><a href="https://discord.gg/7jzhzUPng" target="_blank"><i class="fa-solid fa-gamepad"></i> มินิเกม & RP</a></li>
+                    <li><a href="https://discord.gg/7jzhzUPng" target="_blank"><i class="fa-solid fa-gift"></i> กิจกรรม & แจกของ</a></li>
+                </ul>
+            </nav>
+
+            <div class="sidebar-footer">
+                <a href="https://discord.gg/7jzhzUPng" target="_blank" class="btn btn-discord">
                     <i class="fa-brands fa-discord"></i> เข้าร่วม Discord
                 </a>
-                <a href="#features" class="btn btn-secondary">ดูจุดเด่นเซิร์ฟเวอร์</a>
             </div>
-    
-        </div>
-    </main>
-    <!-- Features Section -->
-<section id="features" class="features-container">
-        <h2>ทำไมต้องเข้าเซิร์ฟเวอร์เรา?</h2>
-        < class="features-grid">
-            <!-- กล่องที่ 1: พูดคุยเป็นกันเอง -->
-<div class="feature-card">
-  <div class="icon"><i class="fa-solid fa-comments"></i></div>
-  <h3>พูดคุยเป็นกันเอง</h3>
-  <p>มีห้องพูดคุยหลากหลายหัวข้อและบริการมากมาย ดูแล24ชั่วโมง</p>
-  <details>
-    <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
-    <div class="details-content">
-      <p>• มีระบบยศและห้องพูดคุยส่วนตัว</p>
-      <p>• ทีมงานคอยดูแลความเรียบร้อยตลอด 24 ชั่วโมง</p>
-    </div>
-  </details>
-</div>
+        </aside>
 
-<!-- กล่องที่ 2: มีRpMinecraft -->
-<div class="feature-card">
-  <div class="icon"><i class="fa-solid fa-gamepad"></i></div>
-  <h3>มีRpMinecraftสนุกๆมากหมายหลายแนว</h3>
-  <p>ไม่ว่าจะRp-ของBedrock หรือ Java เราก็มี</p>
-  <details>
-    <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
-    <div class="details-content">
-      <p>• รองรับทั้งระบบ Java และ Bedrock (MCPE)</p>
-      <p>• มีระบบ Roleplay สนุกๆ และเควสต์ให้ทำมากมาย</p>
-    </div>
-  </details>
-</div>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section id="hero" class="hero">
+                <div class="hero-content">
+                    <div class="badge">
+                        <i class="fa-solid fa-fire"></i> ยินดีต้อนรับสู่ Philin Studio
+                    </div>
+                    <h1>เข้าร่วมและสนุกไปด้วยกัน!</h1>
+                    <p>แหล่งรวมบริการมากมาย และกิจกรรมสนุกๆ มากมายที่รอคุณอยู่</p>
+                    
+                    <div class="cta-buttons">
+                        <a href="https://discord.gg/7jzhzUPng" target="_blank" class="btn btn-primary btn-large">
+                            <i class="fa-brands fa-discord"></i> เข้าร่วม Discord เลย
+                        </a>
+                        <a href="#features" class="btn btn-secondary btn-large">ดูจุดเด่นเซิร์ฟเวอร์</a>
+                    </div>
+                </div>
+            </section>
 
-<!-- กล่องที่ 3: กิจกรรม & แจกของ -->
-<div class="feature-card">
-  <div class="icon"><i class="fa-solid fa-gift"></i></div>
-  <h3>กิจกรรม & แจกของ</h3>
-  <p>มีกิจกรรมสนุกๆ และแจกรางวัลพิเศษให้กับสมาชิกเป็นประจำ</p>
-  <details>
-    <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
-    <div class="details-content">
-      <p>• กิจกรรมสุ่มแจกยศและของรางวัลทุกสัปดาห์</p>
-      <p>• มินิเกมร่วมสนุกในเซิร์ฟเวอร์ Discord</p>
+            <!-- Features Section -->
+            <section id="features" class="features-container">
+                <h2>ทำไมต้องเข้าเซิร์ฟเวอร์เรา?</h2>
+                <div class="features-grid">
+                    <!-- กล่องที่ 1: พูดคุยเป็นกันเอง -->
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-comments"></i></div>
+                        <h3>พูดคุยเป็นกันเอง</h3>
+                        <p>มีห้องพูดคุยหลากหลายหัวข้อและบริการมากมาย ดูแล 24 ชั่วโมง</p>
+                        <details>
+                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
+                            <div class="details-content">
+                                <p>• มีระบบยศและห้องพูดคุยส่วนตัว</p>
+                                <p>• ทีมงานคอยดูแลความเรียบร้อยตลอด 24 ชั่วโมง</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- กล่องที่ 2: มี RpMinecraft -->
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-gamepad"></i></div>
+                        <h3>มี RpMinecraft สนุกๆ หลายแนว</h3>
+                        <p>ไม่ว่าจะ RP ของ Bedrock หรือ Java เราก็มีครบครัน</p>
+                        <details>
+                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
+                            <div class="details-content">
+                                <p>• รองรับทั้งระบบ Java และ Bedrock (MCPE)</p>
+                                <p>• มีระบบ Roleplay สนุกๆ และเควสต์ให้ทำมากมาย</p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- กล่องที่ 3: กิจกรรม & แจกของ -->
+                    <div class="feature-card">
+                        <div class="icon"><i class="fa-solid fa-gift"></i></div>
+                        <h3>กิจกรรม & แจกของ</h3>
+                        <p>มีกิจกรรมสนุกๆ และแจกรางวัลพิเศษให้กับสมาชิกเป็นประจำ</p>
+                        <details>
+                            <summary>อ่านรายละเอียดเพิ่มเติม...</summary>
+                            <div class="details-content">
+                                <p>• กิจกรรมสุ่มแจกยศและของรางวัลทุกสัปดาห์</p>
+                                <p>• มินิเกมร่วมสนุกในเซิร์ฟเวอร์ Discord</p>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <p>&copy; Philin Studio. All rights reserved.</p>
+            </footer>
+        </main>
     </div>
-  </details>
-</div>
-        </div>
+
+    <!-- Script สำหรับเปิด-ปิด เมนูบนมือถือ -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const sidebar = document.getElementById('sidebar');
+
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            const icon = menuToggle.querySelector('i');
+            if (sidebar.classList.contains('open')) {
+                icon.className = 'fa-solid fa-xmark';
+            } else {
+                icon.className = 'fa-solid fa-bars';
+            }
+        });
+    </script>
 </body>
-</section>
-
-<script>
-  // เมื่อคลิกปุ่มที่มีลิงก์ #features ให้แสดงส่วนจุดเด่นขึ้นมา
-  document.querySelector('a[href="#features"]').addEventListener('click', function(e) {
-    const featuresSection = document.getElementById('features');
-    featuresSection.style.display = 'block';
-  });
-</script>
-</body>
+</html>
