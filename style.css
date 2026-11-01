@@ -226,38 +226,13 @@ footer {
     .hero h1 {
         font-size: 2.2rem;
     }
-
-}/* ซ่อนส่วนจุดเด่นเป็นค่าเริ่มต้น */
+    /* ซ่อนส่วนจุดเด่นเป็นค่าเริ่มต้น */
 #features {
     display: none;
 }
-/* ตกแต่งแท็ก details & summary */
-.feature-card details {
-    margin-top: 15px;
-    text-align: left;
-    background: rgba(255, 255, 255, 0.05);
-    border-radius: 8px;
-    padding: 8px 12px;
+/* เมื่อมีการกดลิงก์ #features ให้แสดงผลขึ้นมา */
+#features:target {
+    display: block;
 }
 
-.feature-card summary {
-    cursor: pointer;
-    color: #5865F2;
-    font-weight: bold;
-    font-size: 0.9rem;
-    outline: none;
-    user-select: none;
-}
-
-.feature-card summary:hover {
-    color: #7983f5;
-}
-
-.feature-card .details-content {
-    margin-top: 10px;
-    font-size: 0.85rem;
-    color: #dcddde;
-    line-height: 1.5;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 8px;
 }
