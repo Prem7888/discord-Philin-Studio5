@@ -171,7 +171,7 @@ body {
     z-index: 1;
 }
 
-/* Hero Section (จัดระยะตัวอักษรใหม่ไม่ให้ทับกัน) */
+/* Hero Section (จัดกึ่งกลาง) */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -188,6 +188,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .badge {
@@ -274,11 +275,16 @@ body {
     scroll-margin-top: 50px;
 }
 
+/* จัดหัวข้อ Section ให้อยู่กึ่งกลาง */
+.section-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
 .section-title h2 {
     font-size: 1.8rem;
     color: #38bdf8;
-    margin-bottom: 24px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     gap: 12px;
     border-bottom: 1px solid rgba(56, 189, 248, 0.2);
@@ -286,14 +292,18 @@ body {
     text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
 }
 
+/* จัดตัวอักษรในการ์ดให้อยู่กึ่งกลาง */
 .feature-card {
     background: rgba(11, 22, 48, 0.65);
     backdrop-filter: blur(14px);
     padding: 35px 30px;
     border-radius: 18px;
     border: 1px solid rgba(56, 189, 248, 0.18);
-    text-align: left;
+    text-align: center; /* จัดข้อความกึ่งกลาง */
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .feature-card:hover {
@@ -324,6 +334,7 @@ body {
 /* Accordion Details */
 details {
     cursor: pointer;
+    width: 100%;
 }
 
 summary {
@@ -331,6 +342,7 @@ summary {
     font-size: 1rem;
     font-weight: 600;
     outline: none;
+    text-align: center;
 }
 
 .details-content {
@@ -339,9 +351,10 @@ summary {
     border-top: 1px dashed rgba(56, 189, 248, 0.2);
     color: #cbd5e1;
     font-size: 0.95rem;
+    text-align: center;
 }
 
-/* Rules Card & Rules List Styling */
+/* Rules Card & Rules List Styling (จัดข้อความกฎกึ่งกลาง/อ่านง่าย) */
 .rules-card {
     background: rgba(11, 22, 48, 0.65);
     backdrop-filter: blur(14px);
@@ -363,6 +376,7 @@ summary {
     gap: 18px;
     padding-bottom: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: left; /* ข้อความกฎปล่อยชิดซ้ายเพื่อให้่อานง่ายเป็นระเบียบ แต่จัดรูปไอคอนสวยงาม */
 }
 
 .rules-list li:last-child {
