@@ -159,7 +159,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Main Content Area (แก้ปัญหาหน้าจอว่างเปล่า) */
+/* Main Content Area */
 .main-content {
     margin-left: 270px;
     flex: 1;
@@ -171,18 +171,23 @@ body {
     z-index: 1;
 }
 
-/* Hero Section */
+/* Hero Section (จัดระยะตัวอักษรใหม่ไม่ให้ทับกัน) */
 .hero-section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 100px 30px 60px;
-    min-height: 80vh;
+    padding: 80px 40px 60px;
+    min-height: 85vh;
 }
 
 .hero-content {
-    max-width: 750px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .badge {
@@ -193,18 +198,18 @@ body {
     color: #38bdf8;
     padding: 8px 18px;
     border-radius: 20px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 600;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     border: 1px solid rgba(56, 189, 248, 0.3);
     box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
 }
 
 .glory-title {
-    font-size: 3.3rem;
+    font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 20px;
-    line-height: 1.2;
+    line-height: 1.25;
     background: linear-gradient(180deg, #ffffff 20%, #e0f2fe 60%, #38bdf8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -212,14 +217,16 @@ body {
 }
 
 .hero-section p {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     color: #94a3b8;
     margin-bottom: 35px;
+    max-width: 600px;
 }
 
 .cta-buttons {
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 /* Buttons */
@@ -256,7 +263,7 @@ body {
 .sections-wrapper {
     max-width: 900px;
     margin: 0 auto;
-    padding: 0 30px 80px;
+    padding: 20px 40px 80px;
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -264,25 +271,25 @@ body {
 }
 
 .content-section {
-    scroll-margin-top: 40px;
+    scroll-margin-top: 50px;
 }
 
 .section-title h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #38bdf8;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     display: flex;
     align-items: center;
     gap: 12px;
     border-bottom: 1px solid rgba(56, 189, 248, 0.2);
-    padding-bottom: 10px;
+    padding-bottom: 12px;
     text-shadow: 0 0 10px rgba(56, 189, 248, 0.3);
 }
 
 .feature-card {
     background: rgba(11, 22, 48, 0.65);
     backdrop-filter: blur(14px);
-    padding: 32px 28px;
+    padding: 35px 30px;
     border-radius: 18px;
     border: 1px solid rgba(56, 189, 248, 0.18);
     text-align: left;
@@ -296,21 +303,21 @@ body {
 }
 
 .feature-card .icon {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     color: #38bdf8;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
     filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.5));
 }
 
 .feature-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
     color: #f8fafc;
 }
 
 .feature-card p {
     color: #94a3b8;
-    font-size: 1rem;
+    font-size: 1.05rem;
     margin-bottom: 15px;
 }
 
@@ -321,24 +328,24 @@ details {
 
 summary {
     color: #38bdf8;
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
     outline: none;
 }
 
 .details-content {
-    margin-top: 12px;
-    padding-top: 12px;
+    margin-top: 14px;
+    padding-top: 14px;
     border-top: 1px dashed rgba(56, 189, 248, 0.2);
     color: #cbd5e1;
-    font-size: 0.93rem;
+    font-size: 0.95rem;
 }
 
 /* Rules Card & Rules List Styling */
 .rules-card {
     background: rgba(11, 22, 48, 0.65);
     backdrop-filter: blur(14px);
-    padding: 30px;
+    padding: 35px;
     border-radius: 18px;
     border: 1px solid rgba(56, 189, 248, 0.18);
 }
@@ -347,14 +354,14 @@ summary {
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 22px;
 }
 
 .rules-list li {
     display: flex;
     align-items: flex-start;
-    gap: 16px;
-    padding-bottom: 16px;
+    gap: 18px;
+    padding-bottom: 18px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
@@ -367,7 +374,7 @@ summary {
     font-size: 1.3rem;
     color: #38bdf8;
     background: rgba(14, 165, 233, 0.12);
-    padding: 12px;
+    padding: 14px;
     border-radius: 12px;
     border: 1px solid rgba(56, 189, 248, 0.25);
     flex-shrink: 0;
@@ -375,15 +382,15 @@ summary {
 
 .rules-list strong {
     color: #f8fafc;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .rules-list p {
     color: #94a3b8;
-    font-size: 0.93rem;
-    line-height: 1.5;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 /* Footer */
@@ -432,6 +439,10 @@ summary {
     }
 
     .glory-title {
-        font-size: 2.3rem;
+        font-size: 2.4rem;
+    }
+    
+    .hero-section {
+        padding: 60px 20px 40px;
     }
 }
