@@ -226,4 +226,12 @@ footer {
     .hero h1 {
         font-size: 2.2rem;
     }
+    /* ซ่อนส่วนจุดเด่นเป็นค่าเริ่มต้น */
+#features {
+    display: none;
+}
+/* เมื่อมีการกดลิงก์ #features ให้แสดงผลขึ้นมา */
+#features:target {
+    display: block;
+}
 }
